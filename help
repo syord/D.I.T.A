@@ -1,4 +1,6 @@
-quelqu'un a le script pour faire avancer le personnage sans qu'il s'arrete svp
+quelqu'un a le script pour faire avancer le personnage sans qu'il s'arrete svp(pierrick)
 Essaie de le mettre sous Issues ça permet de mieux gérer
 tu peux faire un 
 gameobject.translate.position(vecteur2) (la doc arrive)
+
+Ouais merci pas trop compris mais je vais creuser de mon coter et il faudrait aussi un script pour faire répéter l'image de l'immeuble ?(pierrick)
