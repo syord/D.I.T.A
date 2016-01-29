@@ -7,3 +7,14 @@ Ouais merci pas trop compris mais je vais creuser de mon coter et il faudrait au
 Je t'ai partager sur drive les fichiers que j'ai fais avec aliprendi, (l'adresse google de l'école) va vérifier et si tu peux le partager
 avec les deux autres ce serait parfait
 Ok je vais essayer mais avec ma connexion bas-débitca va prendre du temps xD
+
+
+
+alors pour faire avencer qqch automatiquement
+(comme la caméra sur la video sur le groupe what's app)
+
+// Update is called once per frame
+    void Update () {
+        GetComponent<Camera>().transform.Translate(avence, 0, 0);
+        
+      joueur.<nomDeLObjetJoueur>().transform.Translate(avence, 0, 0);
