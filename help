@@ -1,1 +1,4 @@
 quelqu'un a le script pour faire avancer le personnage sans qu'il s'arrete svp
+Essaie de le mettre sous Issues ça permet de mieux gérer
+tu peux faire un 
+gameobject.translate.position(vecteur2) (la doc arrive)
