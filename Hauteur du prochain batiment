@@ -1,0 +1,32 @@
+using UnityEngine;
+using System.Collections;
+
+public class Immeubles : MonoBehaviour {
+  // les variables pour les vecteurs sont en float
+    float avence = -0.02f;
+    //l'initailaisation du random pour la "taille" de l'immeuble
+    Random rnd = new Random();
+    // Use this for initialization
+    void Start () {
+        
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	//mouvement des batiments vers la gauche
+        this.transform.Translate(avence, 0, 0);
+        //un fois un des trois batiment qui existe sort de l'écran il est rappartrié à sa droite hors écran
+        if (this.transform.position.x < -13)
+        {
+          //pour mettre une "marge" dans le random et pas qu'il le confondent avec celui d'unity faut mettre le System. devant
+           System.Random rnd = new  System.Random();
+            // dans une nouvelle variable float le random choisi une taille (qui est en fait la position su l'écran)
+            float posY = rnd.Next(-8, -5);
+            // prend cette nouvelle position
+            this.transform.position = new Vector2(13, posY);
+        }
+    }
+}
+
+//l'astuce c'est que mes immeuble sont plus grand que l'écran ce qui me permet avec trois de changer leur hauteurs sans les créés dynamiquement
+// Même si j'aurai preferer utiliser la méthode que Ivan a fait.
