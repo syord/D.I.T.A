@@ -30,3 +30,19 @@ public class Immeubles : MonoBehaviour {
 
 //l'astuce c'est que mes immeuble sont plus grand que l'écran ce qui me permet avec trois de changer leur hauteurs sans les créés dynamiquement
 // Même si j'aurai preferer utiliser la méthode que Ivan a fait.
+
+
+
+
+//MAJ toujours avec le même code pour changer la largeur de l'imeuble
+
+void Update () {
+        this.transform.Translate(avence, 0, 0);
+        if (this.transform.position.x < -13)
+        {
+           System.Random rnd = new  System.Random();
+            float posY = rnd.Next(-8, -5);
+            float largeur = rnd.Next(1, 4);
+            this.transform.position = new Vector2(13, posY);
+            this.transform.localScale = new Vector2(largeur,3);// Pour les changement de taille il faut localScale et non pas juste scale comme avec le position
+        }
